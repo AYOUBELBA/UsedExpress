@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+erd<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>UsedXpress</title>
@@ -25,16 +25,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-      const password = prompt("Enter password to view this demo:");
-      if (password !== "mypassword") {
-        document.body.innerHTML = "<h1>Access Denied</h1>";
+    <script defer>
+      function onlod(){
+        const password = prompt("Enter password to view this demo:");
+        if (password !== "mypassword") {
+          document.body.innerHTML = "<h1>Access Denied</h1>";
+        }  
       }
     </script>
 
 
   </head>
-  <body>
+  <body onload="onlod()">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <defs>
